@@ -18,7 +18,7 @@ document.getElementById('btnIngresar').addEventListener('submit', (e) => {
                 console.log(response[0])
               $.each(response[0], function (id_usuario, fila) {
                 
-                if (fila.roles.includes("AGUACATE") || fila.roles.includes("ADMIN")) { //valida la existencia del rol
+                if (fila.roles.includes("ADMVEHICULAR") || fila.roles.includes("VEHICULAR")) { //valida la existencia del rol
 nombre = fila.nombre;
 roles = fila.roles;
                   guardarUser()
